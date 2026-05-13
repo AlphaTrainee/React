@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "outDir": "dist",
+    "rootDir": "src", // NEU: Damit die Struktur klar ist
+    "target": "esnext",
+    "module": "esnext",
+    "lib": ["DOM", "ESNext"],
+    "strict": true,
+    "jsx": "react",
+    "moduleResolution": "bundler", // GEÄNDERT: Behebt die Deprecation
+    "noEmitOnError": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "build"]
+}

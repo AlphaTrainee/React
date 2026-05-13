@@ -43,7 +43,7 @@ export function ContactDetails({ firstName, email }) {
 
 Der Name "Fred" wird aber nicht ausgegeben. Was ist das Problem?
 
-- es wird firstNaem erwarte und nict name
+- es wird firstName erwarte und nicht name
 
 #### Frage 3
 
