@@ -23,22 +23,25 @@ function reducer(state: State, action: Action): State {
       return {
         ...state,
         count: state.count + 1,
-        history: [`${timestamp}: +1 [count: ${state.count}]`, ...state.history].slice(0, maxSize),
+        history: [`${timestamp}: +1 [count: ${state.count + 1}]`, ...state.history].slice(
+          0,
+          maxSize
+        ),
       };
     case 'DEC':
       return {
         ...state,
         count: state.count - 1,
-        history: [`${timestamp}: -1 [count: ${state.count}]`, ...state.history].slice(0, maxSize),
+        history: [`${timestamp}: -1 [count: ${state.count - 1}]`, ...state.history].slice(
+          0,
+          maxSize
+        ),
       };
     case 'RESET':
       return {
         ...state,
         count: 0,
-        history: [`${timestamp}: RESET [count: ${state.count}]`, ...state.history].slice(
-          0,
-          maxSize
-        ),
+        history: [`${timestamp}: RESET [count: 0]`, ...state.history].slice(0, maxSize),
       };
     default:
       return state;
