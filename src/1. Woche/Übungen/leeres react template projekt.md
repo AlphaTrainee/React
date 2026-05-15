@@ -2,6 +2,8 @@
 
 npm create vite@latest mein-react-projekt -- --template react-ts
 
+npm i -D tailwindcss @tailwindcss/vite
+
 cd mein-react-projekt
 npm install
 npm run dev
