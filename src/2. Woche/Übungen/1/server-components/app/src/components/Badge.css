@@ -1,0 +1,23 @@
+/* Basis-Styling für JEDES Badge */
+.badge {
+  display: inline-block; /* Damit Abstände und Rahmen richtig greifen */
+  border-radius: 4px; /* Abgerundete Ecken */
+  border: 1px solid; /* Dünner Rahmen (Farbe wird unten definiert) */
+  padding: 4px 8px; /* Kleiner Innenabstand (oben/unten links/rechts) */
+  font-size: 0.85rem; /* Kleine Schrift */
+  font-weight: bold; /* Fette Schrift */
+}
+
+/* Spezifisches Styling, wenn zusätzlich die Klasse "success" aktiv ist */
+.badge.success {
+  background-color: #e6f4ea; /* Grünlicher Hintergrund */
+  color: #137333; /* Dunkelgrüner Text */
+  border-color: #137333; /* Dunkelgrüner Rahmen */
+}
+
+/* Spezifisches Styling, wenn zusätzlich die Klasse "warning" aktiv ist */
+.badge.warning {
+  background-color: #fef7e0; /* Gelblicher Hintergrund */
+  color: #b06000; /* Dunkelgelber/Brauner Text */
+  border-color: #b06000; /* Dunkelgelber Rahmen */
+}

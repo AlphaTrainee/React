@@ -39,9 +39,19 @@ dates.push("tomorrow");
 ```
 
 ```ts
-const dates: Date[] = [];
-dates.push(new Date());
-dates.push("tomorrow");
+{
+  const dates: Date[] = [];
+  dates.push(new Date());
+  dates.push("tomorrow");
+}
+
+oder (mit generischem Argument)
+
+{
+  const dates: Array<Date | String> = [];
+  dates.push(new Date());
+  dates.push("tomorrow");
+}
 ```
 
 ### Frage 4: Optional Property und Type Error
