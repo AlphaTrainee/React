@@ -4,6 +4,21 @@
 npx create-next-app@latest app --ts --tailwind --eslint --app --src-dir --import-alias "@/*" --turbopack
 ```
 
+## sql
+
+```bash
+# Für SQLite:
+npm install sqlite3 sqlite
+npm install --save-dev @types/sqlite3
+
+# Für MariaDB / MySQL:
+npm install mysql2
+
+# Für MSSQL:
+npm install mssql
+npm install --save-dev @types/mssql
+```
+
 ## Server Komponenten
 
 ### Der Hauptbefehl
