@@ -4,6 +4,11 @@ type Post = {
   id: number;
   title: string;
   body: string;
+  tags: Array<string>;
+  reaction: {
+    like: number;
+    dislike: number;
+  };
   userId: number;
 };
 
