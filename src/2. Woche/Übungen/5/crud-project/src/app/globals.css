@@ -1,0 +1,170 @@
+/* Globale Layout- und Header-Klassen */
+.main-header {
+  border-bottom: 1px solid #ccc;
+  padding: 1rem;
+  display: flex;
+  gap: 1.5rem;
+  background-color: #f9f9f9;
+}
+
+.header-link-home {
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+
+.header-link-notes {
+  text-decoration: none;
+  color: #0070f3;
+}
+
+.header-link-home:hover,
+.header-link-notes:hover {
+  text-decoration: underline;
+}
+
+.main-content {
+  padding: 1rem;
+}
+
+/* Button Styles */
+.btn-create {
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.btn-create:hover {
+  background-color: #0051a8;
+}
+
+.note-actions-group {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.btn-update {
+  background-color: #f0a500;
+  color: white;
+  border: none;
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-update:hover {
+  background-color: #d39000;
+}
+
+.btn-delete {
+  background-color: #ca0b0b;
+  color: white;
+  border: none;
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-delete:hover {
+  background-color: #9c0909;
+}
+
+/* Layout für die Notizen-Seite */
+.notes-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.notes-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.note-card {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.note-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+
+.note-card p {
+  color: #555;
+  margin-bottom: 0.75rem;
+}
+
+.note-date {
+  font-size: 0.8rem;
+  color: #888;
+  display: block;
+}
+
+/* Styles für die Detailseite */
+.note-detail-container {
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+.note-detail-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 2rem;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.note-detail-content {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
+  margin: 1.5rem 0;
+  white-space: pre-wrap; /* Behält Zeilenumbrüche bei */
+}
+
+.note-detail-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: #666;
+  border-top: 1px solid #eee;
+  padding-top: 1rem;
+}
+
+.navigation-back {
+  margin-top: 1.5rem;
+}
+
+.btn-back {
+  display: inline-block;
+  color: #0070f3;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.btn-back:hover {
+  text-decoration: underline;
+}
+
+.note-title-link {
+  color: #222;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.note-title-link:hover {
+  color: #0070f3; /* Färbt sich beim Drüberfahren blau */
+  text-decoration: underline; /* Zeigt das Unterstreichen nur beim Hover an */
+}

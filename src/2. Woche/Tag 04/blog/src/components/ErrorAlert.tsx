@@ -1,15 +1,10 @@
-export function ErrorAlert({
-  error,
-  resetErrorBoundary,
-}: {
-  error: Error;
-  resetErrorBoundary: () => void;
-}) {
+"use client";
+
+export function ErrorAlert({ error }: { error: Error }) {
   return (
     <div role="alert">
-      <h2>Etwas ist schiefgelaufen</h2>
+      <h3>Etwas ist schiefgelaufen</h3>
       <p>{error.message}</p>
-      <button onClick={resetErrorBoundary}>Nochmal versuchen</button>
     </div>
   );
 }

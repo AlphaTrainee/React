@@ -11,3 +11,11 @@ React Error Boundary
 ```bash
 npm i react-error-boundary
 ```
+
+```bash
+npm i @tanstack/react-query
+```
+
+```bash
+npm i @tanstack/react-query-devtools
+```
