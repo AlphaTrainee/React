@@ -5,13 +5,15 @@ async function main() {
   const shouldReset = process.argv.includes("--reset");
 
   if (shouldReset) {
-    await db.execute("DROP TABLE IF EXISTS forms");
-    console.log("Option --reset aktiv: Alte Tabelle 'forms' wurde gelöscht.");
+    await db.execute("DROP TABLE IF EXISTS contacts");
+    console.log(
+      "Option --reset aktiv: Alte Tabelle 'contacts' wurde gelöscht.",
+    );
   }
 
   // Tabelle erstellen mit deinen Spalten und dem AUTOINCREMENT-Switch für MySQL
   let createTableSql = `
-    CREATE TABLE IF NOT EXISTS forms (
+    CREATE TABLE IF NOT EXISTS contacts (
       id INTEGER PRIMARY KEY AUTOINCREMENT,
       name TEXT NOT NULL,
       email TEXT NOT NULL,
@@ -30,10 +32,10 @@ async function main() {
   }
 
   await db.execute(createTableSql);
-  console.log("Tabelle 'forms' wurde geprüft/erstellt.");
+  console.log("Tabelle 'contacts' wurde geprüft/erstellt.");
 
   // 3 Beispiel-Datensätze (Seed-Daten)
-  const sampleForms = [
+  const samplecontacts = [
     {
       name: "Max Mustermann",
       email: "max@example.com",
@@ -58,9 +60,9 @@ async function main() {
   ];
 
   // Daten über die zentrale Engine einfügen
-  for (const form of sampleForms) {
+  for (const form of samplecontacts) {
     await db.execute({
-      sql: "INSERT INTO forms (name, email, reason, notes, done) VALUES (?, ?, ?, ?, ?)",
+      sql: "INSERT INTO contacts (name, email, reason, notes, done) VALUES (?, ?, ?, ?, ?)",
       args: [form.name, form.email, form.reason, form.notes, form.done],
     });
   }
@@ -72,7 +74,7 @@ async function main() {
 }
 
 main().catch(async (err) => {
-  console.error("Fehler beim Seeding der Forms-Tabelle:", err);
+  console.error("Fehler beim Seeding der contacts-Tabelle:", err);
   try {
     await db.close();
   } catch (_) {}
