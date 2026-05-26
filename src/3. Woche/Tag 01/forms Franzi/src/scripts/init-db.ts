@@ -1,5 +1,5 @@
-// scripts/init-forms.ts
-import { db } from "../src/lib/db"; // Pfad ggf. anpassen, falls src/lib/db genutzt wird
+// scripts/init-db.ts
+import { db } from "../lib/db"; // Pfad ggf. anpassen, falls src/lib/db genutzt wird
 
 async function main() {
   const shouldReset = process.argv.includes("--reset");

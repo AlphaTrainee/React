@@ -1,5 +1,5 @@
-// scripts/init-forms.ts
-import { db } from "../src/lib/db"; // Pfad ggf. anpassen, falls src/lib/db genutzt wird
+// scripts/init-db.ts
+import { db } from "../lib/db"; // Pfad ggf. anpassen, falls src/lib/db genutzt wird
 
 async function main() {
   const shouldReset = process.argv.includes("--reset");
@@ -15,9 +15,9 @@ async function main() {
       id INTEGER PRIMARY KEY AUTOINCREMENT,
       name TEXT NOT NULL,
       email TEXT NOT NULL,
-      reason TEXT NOT NULL,
+      reason TEXT,
       notes TEXT,
-      done INTEGER DEFAULT 0
+      done INTEGER NOT NULL DEFAULT 0
     )
   `;
 
