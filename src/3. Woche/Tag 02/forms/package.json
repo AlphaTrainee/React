@@ -1,0 +1,30 @@
+{
+  "name": "forms",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "db:new": "node --env-file=.env.local --import tsx ./src/scripts/init-db.ts",
+    "db:reset": "node --env-file=.env.local --import tsx ./src/scripts/init-db.ts --reset",
+    "db:org": "node --env-file=.env.local --import tsx ./src/scripts/createDatabase.mjs"
+  },
+  "dependencies": {
+    "@libsql/client": "^0.17.3",
+    "mysql2": "^3.22.3",
+    "next": "16.2.6",
+    "react": "19.2.4",
+    "react-dom": "19.2.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.6",
+    "tsx": "^4.22.3",
+    "typescript": "^5"
+  }
+}
