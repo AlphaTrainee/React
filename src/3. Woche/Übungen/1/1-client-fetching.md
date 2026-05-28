@@ -34,7 +34,9 @@ Der wichtigste Grund ist die Performance.
 2. Schlechtes Zusammenspiel mit Suchmaschinen (SEO) und URLs
 
 Weil Server Actions auf POST basieren, hängen sie an keinem eindeutigen Link.
-Wenn du Daten über eine Server Action filterst (z. B. eine Suche nach "Schuhe"), kannst du diesen Zustand nicht einfach als URL speichern (/produkte?suche=schuhe) und an einen Freund schicken. Bei einem Seiten-Reload wären die geladenen Daten sofort wieder weg. 3. Sicherheits- und Architektur-Risiken
+Wenn du Daten über eine Server Action filterst (z. B. eine Suche nach "Schuhe"), kannst du diesen Zustand nicht einfach als URL speichern (/produkte?suche=schuhe) und an einen Freund schicken. Bei einem Seiten-Reload wären die geladenen Daten sofort wieder weg.
+
+3. Sicherheits- und Architektur-Risiken
 
 Server Actions sind dafür gebaut, sicher Daten vom Client entgegenzunehmen und Mutationen (Schnittstellen zur Datenbank) auszuführen. Wenn man sie als reines Fetching-Werkzeug missbraucht, tunnelt man das sauber getrennte Schichten-Modell von Next.js.
 

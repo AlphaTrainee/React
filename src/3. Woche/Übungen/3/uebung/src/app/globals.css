@@ -1,0 +1,153 @@
+body {
+  font-family: sans-serif;
+  background-color: #ffffff;
+  color: #333333;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.form-newsletter {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 300px;
+  margin-top: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.btn-submit {
+  padding: 0.75rem;
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.btn-submit:disabled {
+  background-color: #999999;
+  cursor: not-allowed;
+}
+
+.feedback-message {
+  margin-top: 1rem;
+  font-weight: 500;
+}
+
+.feedback-success {
+  color: #00875a;
+}
+
+.feedback-error {
+  color: #de350b;
+}
+
+/* Menü auf der Startseite */
+.menu-nav {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.menu-link {
+  padding: 0.75rem 1.5rem;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.link-blue {
+  background-color: #0070f3;
+}
+
+.link-green {
+  background-color: #00875a;
+}
+
+/* Die umschließende Box begrenzen und optional zentrieren */
+.newsletter-box {
+  border: 1px solid #ccc;
+  padding: 20px;
+  max-width: 320px; /* Verhindert, dass die Box zu breit wird */
+  width: 100%; /* Macht sie responsiv auf kleinen Bildschirmen */
+  margin: 2rem auto; /* Zentriert die gesamte Box auf der Seite */
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-sizing: border-box; /* Verhindert, dass Padding die Breite sprengt */
+}
+
+.newsletter-box h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+/* Die Formular-Gruppe kompakter gestalten */
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+/* Das Eingabefeld kontrollieren */
+.form-input {
+  width: 100%; /* Füllt die 320px der Box sauber aus */
+  max-width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  box-sizing: border-box; /* Extrem wichtig, damit Padding innen bleibt */
+}
+
+/* Den Button an die Box-Breite anpassen */
+.btn-submit {
+  width: 100%; /* Macht den Button genauso breit wie das Inputfeld */
+  padding: 0.6rem;
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-submit:disabled {
+  background-color: #999999;
+  cursor: not-allowed;
+}
+
+.message-box {
+  margin-top: 15px;
+  padding: 0.5rem;
+  background-color: #eee;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
