@@ -1,4 +1,4 @@
-"user server";
+"use server";
 
 const DELAY = 1000;
 
